@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Abel';
+    src: local('Abel'), url(../../Assets/fonts/Abel/Abel-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum_Gothic';
+    src: local('Nanum_Gothic'), url(../../Assets/fonts/Nanum_Gothic/NanumGothic-Regular.ttf) format('truetype');
+}
+
+.frontPage {
+    background-color: white;
+    font-family: Nanum_Gothic;
+}
+
+.headerImgTextBoxRow{
+    background-image: url(../../Assets/LoganGunnHeader.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.headerImgTextBox {
+    margin-top: 30vh;
+    text-align: right;
+}
+
+.blueTimelineElements {
+    color: white;
+}
+
+.skillSection {
+    text-align: center;
+}
+
+.ant-timeline-item-head {
+    background-color: transparent;
+}
