@@ -2,14 +2,28 @@ import React from 'react';
 import {Button, Timeline} from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
-    faAward, faBriefcase, faBug, faChartBar, faCode, faLaptopCode,
-    faLayerGroup, faSchool, faTrophy, faUserGraduate, faVials
+    faAward,
+    faBook, faBriefcase, faBug, faBusinessTime, faChartBar, faCode,
+    faGraduationCap,
+    faLaptopCode, faLayerGroup,
+    faSchool,
+    faTrophy,
+    faUserGraduate, faVials
 } from "@fortawesome/free-solid-svg-icons";
 
 import {faFileCode} from '@fortawesome/free-regular-svg-icons'
 import TimelineItem from "antd/es/timeline/TimelineItem";
 import './ProjectTimeLine.css';
-import {faAmazon} from "@fortawesome/free-brands-svg-icons";
+import {
+    faAmazon,
+    faDocker,
+    faGitAlt,
+    faGitlab,
+    faJava,
+    faLinux,
+    faPython,
+    faReact
+} from "@fortawesome/free-brands-svg-icons";
 
 function ProjectTimeLine() {
     return (

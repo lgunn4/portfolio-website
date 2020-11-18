@@ -4,7 +4,7 @@ import 'antd/dist/antd.css'
 import {Col, Row} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava, faPython, faLinux, faDocker, faReact, faGitAlt, faHtml5, faCss3Alt} from "@fortawesome/free-brands-svg-icons";
-import {faDatabase} from "@fortawesome/free-solid-svg-icons";
+import {faCode, faDatabase} from "@fortawesome/free-solid-svg-icons";
 
 
 function Skills() {
