@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutSection.css';
 
-import { Col, Image, Row } from 'react-bootstrap';
+import {Col, Image, Row} from "react-bootstrap";
 
 function AboutSection(){
 
@@ -10,10 +10,10 @@ function AboutSection(){
             <br/>
             <h2>About Me</h2>
             <Row>
-                <Col md={ { span: 2, offset: 1 } }>
-                    <Image roundedCircle width={ 200 } height={ 200 } src="thumbnail.png" />
+                <Col md={{span: 2, offset: 1}}>
+                    <Image roundedCircle width={200} height={200} src="thumbnail.png" />
                 </Col>
-                <Col md={ { span: 6, offset: 1 } }>
+                <Col md={{span: 6, offset: 1}}>
                     <br/>
                     <h5>I am a 22 year old university student currently pursuing an honours double major
                         in Computer Science and Global Commerce at Western University.

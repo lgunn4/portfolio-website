@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b1347c6-39cf-424f-94ff-8e5b8febe77a" name="Default Changelist" comment="FIXED ITTTTTTT">
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="6b1347c6-39cf-424f-94ff-8e5b8febe77a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="30277" />
+    <option name="totalTimeSeconds" value="29685" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,14 +95,7 @@
       <option name="project" value="LOCAL" />
       <updated>1605629707104</updated>
     </task>
-    <task id="LOCAL-00002" summary="FIXED ITTTTTTT">
-      <created>1605732769764</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1605732769764</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +116,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished First Take" />
-    <MESSAGE value="FIXED ITTTTTTT" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIXED ITTTTTTT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished First Take" />
   </component>
 </project>
