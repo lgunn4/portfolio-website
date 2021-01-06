@@ -5,12 +5,9 @@ import {Col, Row} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava, faPython, faLinux, faDocker, faReact, faGitAlt, faHtml5, faCss3Alt} from "@fortawesome/free-brands-svg-icons";
 import {faDatabase} from "@fortawesome/free-solid-svg-icons";
-
+import "./Skills.css";
 
 function Skills() {
-    const customOrange = '#f89820';
-    const customBlue = '#5382a1';
-
     const javaIcon = (<div><FontAwesomeIcon icon={faJava}/> Java</div>);
     const pythonIcon = (<div><FontAwesomeIcon icon={faPython}/> Python</div>);
     const mysqlIcon = (<div><FontAwesomeIcon icon={faDatabase}/> MySQL</div>);
@@ -30,22 +27,22 @@ function Skills() {
                           <Col md={{span:8, offset: 2}} >
                               <h5>Languages</h5>
 
-                              <Progress percent={80} format={() => javaIcon} strokeColor={customOrange}  />
-                              <Progress percent={80} format={() => pythonIcon} strokeColor={customBlue} />
-                              <Progress percent={60} format={() => mysqlIcon}  strokeColor={customOrange} />
-                              <Progress percent={90} format={() => htmlIcon}  strokeColor={customBlue} />
-                              <Progress percent={75} format={() => cssIcon}  strokeColor={customOrange} />
-                              <Progress percent={40} format={() =>  "C++"}  strokeColor={customBlue} />
-                              <Progress percent={30} format={() => "C"}  strokeColor={customOrange} />
+                              <Progress className="primary" percent={80} format={() => javaIcon} />
+                              <Progress className="secondary" percent={80} format={() => pythonIcon} />
+                              <Progress className="primary" percent={60} format={() => mysqlIcon} />
+                              <Progress className="secondary" percent={90} format={() => htmlIcon} />
+                              <Progress className="primary" percent={75} format={() => cssIcon} />
+                              <Progress className="secondary" percent={40} format={() =>  "C++"} />
+                              <Progress className="primary" percent={30} format={() => "C"} />
 
-                              <p></p>
+                              <p/>
                               <br/>
                               <h5>Technologies</h5>
-                              <Progress percent={85} format={() => gitIcon} strokeColor={customBlue}  />
-                              <Progress percent={70} format={() => linuxIcon} strokeColor={customOrange}  />
-                              <Progress percent={30} format={() => dockerIcon}  strokeColor={customBlue} />
-                              <Progress percent={65} format={() => reactIcon} strokeColor={customOrange}  />
-                              <Progress percent={60} format={() => 'Java Spring'}  strokeColor={customBlue} />
+                              <Progress className="primary" percent={85} format={() => gitIcon}/>
+                              <Progress className="secondary" percent={70} format={() => linuxIcon}/>
+                              <Progress className="primary" percent={30} format={() => dockerIcon} />
+                              <Progress className="secondary" percent={65} format={() => reactIcon}/>
+                              <Progress className="primary" percent={60} format={() => 'Java Spring'} />
                           </Col>
                       </Row>
                       <br/>

@@ -1,0 +1,7 @@
+.primary .ant-progress-bg {
+    background-color: var(--custom-orange);
+}
+
+.secondary .ant-progress-bg {
+    background-color: var(--custom-blue);
+}
