@@ -36,3 +36,7 @@
 .ant-timeline-item-head {
     background-color: transparent;
 }
+
+.container-fluid {
+    padding: 0;
+}

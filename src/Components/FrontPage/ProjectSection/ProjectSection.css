@@ -1,0 +1,24 @@
+.project-section-container {
+    padding: 3vh 0;
+    width: 100%;
+    background-color: var(--dark-green);
+}
+
+.project-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project-section h2, .project-section h4, .project-section p{
+    color: white;
+}
+
+.project-section .card {
+    background-color: var(--custom-green);
+    margin: 3vh;
+}
+
+.project-section .empty-card {
+    background-color: transparent;
+    border: 0 ;
+}
