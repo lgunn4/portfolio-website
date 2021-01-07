@@ -8,25 +8,34 @@ function AboutSection(){
     return(
         <div className="about-section">
             <br/>
-            <h2>About Me</h2>
             <Row>
-                <Col md={{span: 2, offset: 1}}>
-                    <Image roundedCircle width={200} height={200} src="thumbnail.png" />
+                <Col className="about-image" md={{span: 2, offset: 1}}>
+                    <Image roundedCircle width={250} height={250} src="thumbnail.JPG" />
                 </Col>
-                <Col md={{span: 6, offset: 1}}>
+                <Col xs={{span: 10, offset: 1}} md={{span: 6, offset: 1}}>
                     <br/>
+                    <h2>About Me</h2>
                     <h5>I am a 22 year old university student currently pursuing an honours double major
                         in Computer Science and Global Commerce at Western University.
+                    </h5>
+
                         <br/>
+                        <h5>
                         I am a self starter and an entrepreneur and have successfully created and ran my own business
                         when I was 18.
-                        <br/>
+                        </h5>
+                <br/>
+                    <h5>
+
                         I love to learn and chase new opportunities as well as explore my own talents. I love doing this
                         through programming, making music, and meditation.
                     </h5>
                 </Col>
 
             </Row>
+            <br/>
+            <br/>
+            <p><strong>Learn More About My Experience and Skills</strong></p>
         </div>
     );
 }

@@ -23,6 +23,8 @@ function Skills() {
        <div className="skillSection">
                   <div>
                       <br/>
+                      <h3>Skills</h3>
+                      <br/>
                       <Row className="align-items-center" style={{height: "inherit"}}>
                           <Col md={{span:8, offset: 2}} >
                               <h5>Languages</h5>

@@ -16,14 +16,16 @@ function FrontPage() {
                 <AboutSection />
                 <br/>
                 <DropDownSection>
-                    <Row>
-                        <Col md={6}>
-                            <ProjectTimeLine/>
-                        </Col>
-                        <Col md={6}>
-                            <Skills/>
-                        </Col>
-                    </Row>
+                    <div>
+                        <Row>
+                            <Col md={{span: 6, offset: 0}} xs={{span: 10, offset:1}}>
+                                <ProjectTimeLine/>
+                            </Col>
+                            <Col md={{span:6, offset:0}} xs={{span: 8, offset:2}}>
+                                <Skills/>
+                            </Col>
+                        </Row>
+                    </div>
                 </DropDownSection>
                 <ProjectSection />
             </div>

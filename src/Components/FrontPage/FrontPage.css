@@ -13,18 +13,6 @@
     font-family: Nanum_Gothic;
 }
 
-.headerImgTextBoxRow{
-    background-image: url(../../Assets/LoganGunnHeader.JPG);
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-}
-
-.headerImgTextBox {
-    margin-top: 30vh;
-    text-align: right;
-}
-
 .blueTimelineElements {
     color: white;
 }

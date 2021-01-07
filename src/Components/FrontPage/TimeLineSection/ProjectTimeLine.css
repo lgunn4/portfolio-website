@@ -4,3 +4,16 @@
 .larger-icons .svg-inline--fa {
     width:1.5em;
 }
+
+.project-timeline{
+    text-align: center;
+}
+
+@media (max-width: 765px) {
+    .ant-timeline-item-content {
+        font-size: 0.75rem;
+    }
+    .ant-timeline-item-content h4 {
+        font-size: 1.15rem;
+    }
+}

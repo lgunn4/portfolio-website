@@ -5,3 +5,9 @@
 .about-section h5 {
     text-align: left;
 }
+
+.about-image {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -4,3 +4,18 @@
   --custom-green: #748B6F;
   --dark-green: #2A403D;
 }
+
+@media(max-width: 765px) {
+  /*h3 {*/
+  /*  font-size: 1.0rem;*/
+  /*}*/
+  /*h4 {*/
+  /*  font-size: 1.0rem;*/
+  /*}*/
+  /*h5 {*/
+  /*  font-size: 1.0rem;*/
+  /*}*/
+  /*h6 {*/
+  /*  font-size: 0.75rem;*/
+  /*}*/
+}

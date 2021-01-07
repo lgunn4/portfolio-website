@@ -1,0 +1,21 @@
+.header-img-text-row{
+    background-image: url(../../../Assets/LoganGunnHeader.JPG);
+    background-position: right;
+    background-size: cover;
+    height: 80vh;
+}
+
+.header-img-text-box {
+    margin-top: 35vh;
+    text-align: right;
+}
+
+@media (max-width: 765px) {
+    .header-img-text-row {
+        height: 100vh;
+    }
+    .header-img-text-box {
+        margin-top: 5vh;
+        text-align: right;
+    }
+}

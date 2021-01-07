@@ -9,13 +9,18 @@
     margin: 0 auto;
 }
 
-.project-section h2, .project-section h4, .project-section p{
+.project-section h1 {
+    text-align: center;
+}
+
+.project-section h1, .project-section h4, .project-section p{
     color: white;
 }
 
 .project-section .card {
     background-color: var(--custom-green);
     margin: 3vh;
+    border: none;
 }
 
 .project-section .empty-card {
