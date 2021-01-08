@@ -2,9 +2,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faCss3Alt,
     faDocker,
-    faGitAlt,
+    faGitAlt, faGithubSquare,
     faHtml5,
-    faJava, faJsSquare,
+    faJava, faJsSquare, faLinkedin,
     faLinux,
     faPython,
     faReact
@@ -29,6 +29,8 @@ export const cppIcon = (<div className="skill-icon">C++</div>);
 export const cmakeIcon = (<div className="skill-icon">Cmake</div>);
 export const apolloIcon = (<div className="skill-icon">Apollo</div>);
 export const strapiIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faServer} /> Strapi</div>);
+export const githubIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faGithubSquare} /> GitHub</div>);
+export const linkedinIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</div>);
 
 export const projects = [
     {
@@ -103,3 +105,6 @@ export const projects = [
 
 ];
 export const NUM_PROJECT_ROWS = 2;
+
+export const GIT_HUB_URL = "https://github.com/lgunn4/";
+export const LINKED_IN_URL = "https://www.linkedin.com/in/logan-gunn/";

@@ -7,6 +7,7 @@ import DropDownSection from "./DropDownSection/DropDownSection";
 import ProjectTimeLine from "./TimeLineSection/ProjectTimeLine";
 import Skills from "./SkillsSection/Skills";
 import ProjectSection from "./ProjectSection/ProjectSection";
+import FooterSection from "../FooterSection/FooterSection";
 
 function FrontPage() {
     return (
@@ -28,6 +29,7 @@ function FrontPage() {
                     </div>
                 </DropDownSection>
                 <ProjectSection />
+                <FooterSection />
             </div>
         </Container>
     )

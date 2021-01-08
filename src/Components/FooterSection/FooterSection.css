@@ -1,0 +1,26 @@
+.footer-section-container {
+    width: 100%;
+    background-color: var(--dark-green);
+}
+
+.footer-section {
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-section a, .footer-section h4, .footer-section p {
+    color: white;
+}
+
+.footer-section a:hover {
+    color: var(--custom-gray);
+}
+
+.designed-by {
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+}
+.designed-by p {
+    color: var(--custom-gray);
+    padding-bottom: 5vh;
+}
