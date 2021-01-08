@@ -6,6 +6,11 @@
     text-align: left;
 }
 
+.about-section .row {
+    width: 100%;
+    margin: 0;
+}
+
 .about-image {
     display:flex;
     align-items: center;

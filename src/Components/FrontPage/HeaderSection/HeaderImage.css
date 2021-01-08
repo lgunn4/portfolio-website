@@ -3,6 +3,8 @@
     background-position: right;
     background-size: cover;
     height: 80vh;
+    width: 100%;
+    margin: 0;
 }
 
 .header-img-text-box {
