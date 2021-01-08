@@ -5,7 +5,7 @@
 }
 
 .project-section {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.project-section h1, .project-section h4, .project-section p{
+.project-section h1, .project-section h4, .project-section p, .project-section h5{
     color: white;
 }
 
@@ -26,4 +26,25 @@
 .project-section .empty-card {
     background-color: transparent;
     border: 0 ;
+}
+
+.project-section .card-img {
+    border-radius: 0;
+    height: 45vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.project-skills {
+    color: var(--custom-gray);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.project-skills .skill-icon {
+    padding-left: 2vh;
+}
+
+.project-section a {
+    color: var(--custom-gray);
 }
