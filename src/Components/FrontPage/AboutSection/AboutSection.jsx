@@ -21,13 +21,13 @@ function AboutSection(){
 
                         <br/>
                         <h5>
-                        I am a self starter and an entrepreneur and have successfully created and ran my own business
+                        I am a self-starter and an entrepreneur. I successfully created and ran my own business
                         when I was 18.
                         </h5>
                 <br/>
                     <h5>
 
-                        I love to learn and chase new opportunities as well as explore my own talents. I love doing this
+                        I love to learn and chase new opportunities as well as explore my own talents. I do this
                         through programming, making music, and meditation.
                     </h5>
                 </Col>

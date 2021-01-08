@@ -32,9 +32,9 @@ function ProjectTimeLine() {
                     <h6>Western University</h6>
                     <div><FontAwesomeIcon icon={faLaptopCode}></FontAwesomeIcon> - Honours Double Major in Computer Science and Global Commerce</div>
                     <div><FontAwesomeIcon icon={faAward} width={"1.5em"}/>  - 2017 Dean's Honour Roll</div>
-                    <div><FontAwesomeIcon icon={faTrophy} /> - 2020 Recipient of Lynne Cram Student Award</div>
+                    <div><FontAwesomeIcon icon={faTrophy} /> - 2020 Recipient of Lynne Cram Award</div>
                     <p></p>
-                    <div><FontAwesomeIcon icon={faUserGraduate} /> - Expected Graduation May 2021</div>
+                    <div><FontAwesomeIcon icon={faUserGraduate} /> - Expected Graduation June 2021</div>
 
                     <br/>
                 </TimelineItem>
@@ -60,7 +60,7 @@ function ProjectTimeLine() {
                 >
                     <h4>Entrepreneur and Sole Proprietor</h4>
                     <h6>Real World Textbooks</h6>
-                    <p>Buying and selling inventory, marketing/promoting the business, overseeing financials, and analyzing customer behavior</p>
+                    <p>Buying and selling inventory, marketing/promoting business, overseeing financials, and analyzing customer behavior</p>
                     <div><FontAwesomeIcon icon={faAmazon}/> - Amazon FBA business</div>
                     <a href="https://realworldtextbooks.wixsite.com/realworldtextbooks"><Button>Go To Website</Button></a>
 

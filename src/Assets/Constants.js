@@ -62,7 +62,7 @@ export const projects = [
             <div>
                 <p>The Resourcing App is a web-application that allows managers to keep track of and manage resources on different projects.</p>
                 <p>This application is a full-stack app that was designed and developed by the GM development team at Autodata.</p>
-                <p>The app provides graphs and tables, allowing the company to easily projects or resources that are either under-allocated or over-allocated.</p>
+                <p>The app provides graphs and tables, allowing the company to easily manage projects or resources that are either under-allocated or over-allocated.</p>
             </div>),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610131939/resource-management-image_ngok87.jpg",
         skills: [javaIcon, mysqlIcon, kubeIcon, reactIcon]
@@ -71,8 +71,8 @@ export const projects = [
         title: "BlackJack game",
         description: (
             <div>
-                <p>The Black Jack game is a C++ game that followed the standard Black Jack Casino rules.</p>
-                <p>This game implemented complex features such as customizing dealer's behaviour, game replays, and in-game suggestions for the best chances of winning.</p>
+                <p>The Black Jack game is a C++ application that follows the standard Black Jack Casino rules.</p>
+                <p>The app implemented complex features such as customizing dealer's behaviour, game replays, and in-game suggestions for the best chances of winning.</p>
             </div>),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610135530/blackjack-project-image_jewbso.jpg",
         url: "https://github.com/lgunn4/Black-Jack-Project-cs3307",
@@ -83,7 +83,7 @@ export const projects = [
         description: (
             <div>
                 <p>logangunn.com is a portfolio website designed and built by me to showcase my personal programming skills and abilities.</p>
-                <p>This website also features projects I have worked on in order to highlight my abilities as a software developer</p>
+                <p>This website also features projects I have worked on in order to highlight my abilities as a software developer.</p>
             </div>
         ),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1609966240/personal-site-image_ejipc5.png",
@@ -91,7 +91,7 @@ export const projects = [
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
     {
-        title: "Old Gnarly - Art site",
+        title: "Art Site - Old Gnarly",
         description: (
             <div>
                 <p>This is a website I designed and built for the artist Old Gnarly in order to showcase and help sell their artwork.</p>

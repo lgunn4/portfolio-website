@@ -5,6 +5,11 @@
 
 }
 
+.collapse-button button {
+    background-color: var(--custom-green);
+    border: var(--custom-green);
+}
+
 .collapse .row {
     width: 100%;
     margin: 0;
