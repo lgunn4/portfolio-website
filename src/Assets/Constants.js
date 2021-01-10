@@ -52,7 +52,7 @@ export const projects = [
                 <p>The Shoppies is a web application designed and built by me that allows users to search for films and add them to a list of nominations.</p>
                 <p>This application was written with the React js library and uses the OMDB api to search and retrieve movies & films.</p>
             </div>),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1609966144/shoppie-image_bbmafb.png",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610310604/Screen_Shot_2021-01-10_at_3.21.49_PM_xld86n.png",
         url: "https://shoppie-movie-awards.netlify.app/",
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
