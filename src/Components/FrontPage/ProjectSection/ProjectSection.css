@@ -17,10 +17,20 @@
     color: white;
 }
 
+.project-section .project-section-col {
+    padding: 0 0 5vh 0;
+}
+
 .project-section .card {
     background-color: var(--custom-green);
     margin: 3vh;
     border: none;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.project-section .card:hover {
+    box-shadow: 0 1vh 3vh black;
 }
 
 .project-section .empty-card {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectSection.css";
-import {Card, CardDeck, Col, Row} from "react-bootstrap";
+import {Card, Col, Row} from "react-bootstrap";
 import {projects, NUM_PROJECT_ROWS} from "../../../Assets/Constants";
 
 
@@ -8,17 +8,21 @@ function ProjectSection() {
 
     const cards = projects.map(project => {
         return (
-            <Card>
-                {project.url ? (<a href={project.url}><Card.Img alt="example" src={project.image}/></a>) : <Card.Img alt="example" src={project.image}/>}
-                <Card.Body>
-                    <h4>{project.title}</h4>
-                    {project.description}
-                    <div className="project-skills">
-                        <br/>
-                        {project.skills}
-                    </div>
-                </Card.Body>
-            </Card>
+          <Col className="project-section-col" md={6}>
+                  <Card>
+                      <a className="project-card-anchor" href={project.url}>
+                          <Card.Img alt="project-image" src={project.image}/>
+                          <Card.Body>
+                              <h4>{project.title}</h4>
+                              {project.description}
+                              <div className="project-skills">
+                                  <br/>
+                                  {project.skills}
+                              </div>
+                          </Card.Body>
+                      </a>
+                  </Card>
+          </Col>
 
         )
     });
@@ -27,10 +31,10 @@ function ProjectSection() {
 
     for (let i = 0; i < numCardDecks; i++) {
         const cardDeck = (
-            <CardDeck>
+            <Row>
                 {cards[i * NUM_PROJECT_ROWS]}
                 {cards[i * NUM_PROJECT_ROWS + 1] ? cards[i * NUM_PROJECT_ROWS + 1] : <Card className="empty-card"/>}
-            </CardDeck>);
+            </Row>);
         cardDecks.push(cardDeck);
     }
 

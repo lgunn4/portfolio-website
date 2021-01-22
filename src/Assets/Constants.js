@@ -34,7 +34,7 @@ export const linkedinIcon = (<div className="skill-icon"><FontAwesomeIcon icon={
 
 export const projects = [
     {
-        title: "IOM (Incentive Offer Management)",
+        title: "IOM",
         description: (
             <div>
                 <p>IOM is software written in Java using the Spring framework consisting of several web applications, web services, and ETLs designed and managed by Autodata.</p>
@@ -42,6 +42,7 @@ export const projects = [
                 <p>IOM webservices can be used to retrieve vital information of incentives and offers related to customer type, region, and more.</p>
             </div>
         ),
+        url: "https://www.autodatasolutions.com/",
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610131761/iom-project-image_gkaj1c.jpg",
         skills: [javaIcon, pythonIcon, mysqlIcon, dockerIcon]
     },
@@ -65,6 +66,7 @@ export const projects = [
                 <p>The app provides graphs and tables, allowing the company to easily manage projects or resources that are either under-allocated or over-allocated.</p>
             </div>),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610131939/resource-management-image_ngok87.jpg",
+        url: "https://www.autodatasolutions.com/",
         skills: [javaIcon, mysqlIcon, kubeIcon, reactIcon]
     },
     {

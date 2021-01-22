@@ -1,9 +1,19 @@
 .about-section {
     text-align:center;
+    margin-top: 5vh;
 }
 
 .about-section h5 {
     text-align: left;
+    padding-top: 2vh;
+    font-size: 1.1rem;
+}
+
+.about-section h2 {
+    padding-top: 3vh;
+}
+.about-section p {
+    padding-top: 5vh;
 }
 
 .about-section .row {
