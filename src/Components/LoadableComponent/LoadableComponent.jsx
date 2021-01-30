@@ -8,7 +8,7 @@ export const LoadableComponent = ({children}) => {
     const loadingComponent = (
         <div className="loadable-component">
             <SyncLoader isLoading={isLoading} color="black"/>
-            <img alt='hidden-header-photo'
+            <img alt='hidden-header'
                  hidden={true}
                  src={HEADER_IMAGE_URL}
                  onLoad={() => {
