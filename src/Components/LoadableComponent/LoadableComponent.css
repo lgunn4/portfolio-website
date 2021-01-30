@@ -1,0 +1,10 @@
+.loadable-component {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin:45vh auto;
+}
+
+body {
+    height: fit-content;
+}
