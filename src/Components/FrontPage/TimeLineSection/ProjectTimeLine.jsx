@@ -18,7 +18,7 @@ import {
 
 function ProjectTimeLine() {
     return (
-        <div class="project-timeline">
+        <div className="project-timeline">
             <br/>
             <h3>Timeline</h3>
             <br/>

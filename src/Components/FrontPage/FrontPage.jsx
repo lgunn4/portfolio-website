@@ -12,25 +12,25 @@ import FooterSection from "../FooterSection/FooterSection";
 function FrontPage() {
     return (
         <Container fluid className="frontPage" >
-            <div>
-                <HeaderImage />
-                <AboutSection />
-                <br/>
-                <DropDownSection>
-                    <div>
-                        <Row>
-                            <Col md={{span: 6, offset: 0}} xs={{span: 10, offset:1}}>
-                                <ProjectTimeLine/>
-                            </Col>
-                            <Col md={{span:6, offset:0}} xs={{span: 8, offset:2}}>
-                                <Skills/>
-                            </Col>
-                        </Row>
-                    </div>
-                </DropDownSection>
-                <ProjectSection />
-                <FooterSection />
-            </div>
+                <div>
+                    <HeaderImage />
+                    <AboutSection />
+                    <br/>
+                    <DropDownSection>
+                        <div>
+                            <Row>
+                                <Col md={{span: 6, offset: 0}} xs={{span: 10, offset:1}}>
+                                    <ProjectTimeLine/>
+                                </Col>
+                                <Col md={{span:6, offset:0}} xs={{span: 8, offset:2}}>
+                                    <Skills/>
+                                </Col>
+                            </Row>
+                        </div>
+                    </DropDownSection>
+                    <ProjectSection />
+                    <FooterSection />
+                </div>
         </Container>
     )
 }
