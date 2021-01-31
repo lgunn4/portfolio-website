@@ -1,7 +1,7 @@
 .loadable-component {
     height: 100%;
     width: 100%;
-    background-color: var(--custom-blue);
+    background-color: var(--loading-background);
 }
 
 .css-0 {

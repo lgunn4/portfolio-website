@@ -5,7 +5,7 @@ import './LoadingComponent.css';
 export const LoadingComponent = () => {
     return (
         <div className="loadable-component">
-            <SyncLoader isLoading={true} color="var(--custom-orange)"/>
+            <SyncLoader isLoading={true} color="black"/>
         </div>
     );
 }
