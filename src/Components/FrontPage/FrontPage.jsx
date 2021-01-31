@@ -8,13 +8,10 @@ import ProjectTimeLine from "./TimeLineSection/ProjectTimeLine";
 import Skills from "./SkillsSection/Skills";
 import ProjectSection from "./ProjectSection/ProjectSection";
 import FooterSection from "../FooterSection/FooterSection";
-import {LoadableComponent} from "../LoadableComponent/LoadableComponent";
-
 
 function FrontPage() {
     return (
         <Container fluid className="frontPage" >
-            <LoadableComponent>
                 <div>
                     <HeaderImage />
                     <AboutSection />
@@ -34,7 +31,6 @@ function FrontPage() {
                     <ProjectSection />
                     <FooterSection />
                 </div>
-            </LoadableComponent>
         </Container>
     )
 }

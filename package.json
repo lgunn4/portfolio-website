@@ -18,6 +18,7 @@
     "react-bootstrap": "^1.4.0",
     "react-burger-menu": "^2.9.0",
     "react-dom": "^17.0.1",
+    "react-preloading-screen": "^1.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",

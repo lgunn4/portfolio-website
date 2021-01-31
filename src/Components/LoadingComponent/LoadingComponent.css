@@ -1,0 +1,15 @@
+.loadable-component {
+    height: 100%;
+    width: 100%;
+    background-color: var(--custom-blue);
+}
+
+.css-0 {
+    margin:45vh auto;
+    width: fit-content;
+    display: flex;
+}
+
+body {
+    height: fit-content;
+}
