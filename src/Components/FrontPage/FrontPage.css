@@ -1,16 +1,8 @@
-@font-face {
-    font-family: 'Abel';
-    src: local('Abel'), url(../../Assets/fonts/Abel/Abel-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Nanum_Gothic';
-    src: local('Nanum_Gothic'), url(../../Assets/fonts/Nanum_Gothic/NanumGothic-Regular.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 .frontPage {
     background-color: white;
-    font-family: Nanum_Gothic;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .blueTimelineElements {

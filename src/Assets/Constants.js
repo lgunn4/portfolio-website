@@ -12,7 +12,7 @@ import {
 import {faDatabase, faDharmachakra, faServer} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-export const HEADER_IMAGE_URL = "https://res.cloudinary.com/ddtorekqd/image/upload/v1612041955/LoganGunnHeader_ygpvka.jpg";
+export const HEADER_IMAGE_URL = "https://res.cloudinary.com/ddtorekqd/image/upload/q_80/v1612041955/LoganGunnHeader_ygpvka.jpg";
 
 export const javaIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faJava}/> Java</div>);
 export const springIcon = (<div className="skill-icon">Java Spring</div>);
@@ -45,7 +45,7 @@ export const projects = [
             </div>
         ),
         url: "https://www.autodatasolutions.com/",
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610131761/iom-project-image_gkaj1c.jpg",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1610131761/iom-project-image_gkaj1c.jpg",
         skills: [javaIcon, pythonIcon, mysqlIcon, dockerIcon]
     },
     {
@@ -55,7 +55,7 @@ export const projects = [
                 <p>The Shoppies is a web application designed and built by me that allows users to search for films and add them to a list of nominations.</p>
                 <p>This application was written with the React js library and uses the OMDB api to search and retrieve movies & films.</p>
             </div>),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610310604/Screen_Shot_2021-01-10_at_3.21.49_PM_xld86n.png",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1610310604/Screen_Shot_2021-01-10_at_3.21.49_PM_xld86n.png",
         url: "https://shoppie-movie-awards.netlify.app/",
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
@@ -67,7 +67,7 @@ export const projects = [
                 <p>This application is a full-stack app that was designed and developed by the GM development team at Autodata.</p>
                 <p>The app provides graphs and tables, allowing the company to easily manage projects or resources that are either under-allocated or over-allocated.</p>
             </div>),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610131939/resource-management-image_ngok87.jpg",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1610131939/resource-management-image_ngok87.jpg",
         url: "https://www.autodatasolutions.com/",
         skills: [javaIcon, mysqlIcon, kubeIcon, reactIcon]
     },
@@ -78,7 +78,7 @@ export const projects = [
                 <p>The Black Jack game is a C++ application that follows the standard Black Jack Casino rules.</p>
                 <p>The app implemented complex features such as customizing dealer's behaviour, game replays, and in-game suggestions for the best chances of winning.</p>
             </div>),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1610135530/blackjack-project-image_jewbso.jpg",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1610135530/blackjack-project-image_jewbso.jpg",
         url: "https://github.com/lgunn4/Black-Jack-Project-cs3307",
         skills: [cppIcon, cmakeIcon]
     },
@@ -90,7 +90,7 @@ export const projects = [
                 <p>This website also features projects I have worked on in order to highlight my abilities as a software developer.</p>
             </div>
         ),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1609966240/personal-site-image_ejipc5.png",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1609966240/personal-site-image_ejipc5.png",
         url: "/",
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
@@ -102,7 +102,7 @@ export const projects = [
                 <p>It was built using the React Js library along with a <a href="https://strapi.io/">Strapi headless CMS backend</a> for easily managing and uploading artwork.</p>
             </div>
         ),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1609966362/old-gnarly-art-image_amehzr.png",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1609966362/old-gnarly-art-image_amehzr.png",
         url: "https://oldgnarly.com/",
         skills: [reactIcon, apolloIcon, strapiIcon]
     },
