@@ -55,7 +55,7 @@ export const projects = [
                 <p>The Shoppies is a web application designed and built by me that allows users to search for films and add them to a list of nominations.</p>
                 <p>This application was written with the React js library and uses the OMDB api to search and retrieve movies & films.</p>
             </div>),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1610310604/Screen_Shot_2021-01-10_at_3.21.49_PM_xld86n.png",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/c_scale,q_10,w_1079/v1613152221/ShoppiesSite_hqnxyw.png",
         url: "https://shoppie-movie-awards.netlify.app/",
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
@@ -90,7 +90,7 @@ export const projects = [
                 <p>This website also features projects I have worked on in order to highlight my abilities as a software developer.</p>
             </div>
         ),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1609966240/personal-site-image_ejipc5.png",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/c_scale,q_10,w_1079/v1613152221/Personal-Site_jj6m28.png",
         url: "/",
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
@@ -102,7 +102,7 @@ export const projects = [
                 <p>It was built using the React Js library along with a <a href="https://strapi.io/">Strapi headless CMS backend</a> for easily managing and uploading artwork.</p>
             </div>
         ),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1609966362/old-gnarly-art-image_amehzr.png",
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/c_scale,q_10,w_1079/v1613152221/old-gnaryly-site_eaftnp.png",
         url: "https://oldgnarly.com/",
         skills: [reactIcon, apolloIcon, strapiIcon]
     },
