@@ -18,7 +18,7 @@ import {
 function Skills() {
 
     return(
-       <div className="skillSection">
+       <div className="skill-section">
                   <div>
                       <br/>
                       <h3>Skills</h3>

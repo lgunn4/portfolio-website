@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 .frontPage {
-    background-color: white;
+    background-color: var(--custom-background);
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -9,7 +9,7 @@
     color: white;
 }
 
-.skillSection {
+.skill-section {
     text-align: center;
 }
 

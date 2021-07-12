@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b1347c6-39cf-424f-94ff-8e5b8febe77a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/TimeLineSection/ProjectTimeLine.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/TimeLineSection/ProjectTimeLine.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/thumbnail.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/thumbnail.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FooterSection/FooterSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FooterSection/FooterSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/AboutSection/AboutSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/AboutSection/AboutSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/DropDownSection/DropDownSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/DropDownSection/DropDownSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/FrontPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/FrontPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/ProjectSection/ProjectSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/ProjectSection/ProjectSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/SkillsSection/Skills.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/SkillsSection/Skills.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/SkillsSection/Skills.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/SkillsSection/Skills.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontPage/TimeLineSection/ProjectTimeLine.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontPage/TimeLineSection/ProjectTimeLine.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,19 +55,18 @@
       <recent name="$PROJECT_DIR$/src/Components/FrontPage" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="npm.npm start">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -72,6 +81,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -99,23 +109,34 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished First Take" />
     <option name="LAST_COMMIT_MESSAGE" value="Finished First Take" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Components/FrontPage/TimeLineSection/ProjectTimeLine.jsx</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

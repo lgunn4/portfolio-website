@@ -1,7 +1,7 @@
 .project-section-container {
     padding: 3vh 0;
     width: 100%;
-    background-color: var(--dark-green);
+    background-color: var(--custom-primary);
 }
 
 .project-section {
@@ -13,8 +13,12 @@
     text-align: center;
 }
 
-.project-section h1, .project-section h4, .project-section p, .project-section h5{
+.project-section h1 {
     color: white;
+}
+
+.project-section h4, .project-section p, .project-section h5{
+    color: black;
 }
 
 .project-section .project-section-col {
@@ -22,7 +26,7 @@
 }
 
 .project-section .card {
-    background-color: var(--custom-green);
+    background-color: var(--custom-secondary);
     margin: 3vh;
     border: none;
     height: 100%;
@@ -50,11 +54,15 @@
     display: flex;
     justify-content: flex-start;
 }
+.skill-icon {
+    color: white;
+}
 
 .project-skills .skill-icon {
     padding-left: 2vh;
+    color: black;
 }
 
 .project-section a {
-    color: var(--custom-gray);
+    color: var(--custom-background);
 }

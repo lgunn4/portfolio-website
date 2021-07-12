@@ -1,10 +1,11 @@
 :root {
   --custom-orange: #f89820;
   --custom-blue: #5382a1;
-  --custom-green: #748B6F;
   --custom-light-green: rgba(116, 139 ,111, 0.75);
-  --dark-green: #2A403D;
   --custom-gray: rgba(255,255,255,0.65);
   --custom-dark-gray: #343a40;
   --loading-background: #c1cfdc;
+  --custom-background: #5D6765;
+  --custom-primary: #282F44;
+  --custom-secondary: #CCB7AE;
 }

@@ -5,3 +5,7 @@
 .secondary .ant-progress-bg {
     background-color: var(--custom-blue);
 }
+
+.skill-section, .skill-section h1, .skill-section h3, .skill-section h3, .skill-section h4, .skill-section h5, .skill-section h6, .skill-section p{
+    color: white;
+}

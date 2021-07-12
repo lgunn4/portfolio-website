@@ -3,6 +3,10 @@
     margin-top: 5vh;
 }
 
+.about-section h1, .about-section h2, .about-section h3, .about-section h4, .about-section h5, .about-section h6, .about-section p{
+    color: white;
+}
+
 .about-section h5 {
     text-align: left;
     padding-top: 2vh;

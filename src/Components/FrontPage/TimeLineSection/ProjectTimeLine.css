@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.project-timeline, .ant-timeline, .project-timeline h1, .project-timeline h2, .project-timeline h3, .project-timeline h4, .project-timeline h5, .project-timeline h6, .project-timeline p{
+    color: white;
+}
+
 @media (max-width: 765px) {
     .ant-timeline-item-content {
         font-size: 0.75rem;
