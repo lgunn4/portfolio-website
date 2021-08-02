@@ -34,7 +34,7 @@
 }
 
 .project-section .card:hover {
-    box-shadow: 0 1vh 3vh black;
+    box-shadow: 0 1vh 3vh var(--custom-background);
 }
 
 .project-section .empty-card {

@@ -28,6 +28,7 @@ export const jsIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faJsSq
 export const kubeIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faDharmachakra}/> Kubernetes</div>);
 export const cIcon = (<div className="skill-icon">C</div>);
 export const cppIcon = (<div className="skill-icon">C++</div>);
+export const cSharpIcon = (<div className="skill-icon">C#</div>);
 export const cmakeIcon = (<div className="skill-icon">Cmake</div>);
 export const apolloIcon = (<div className="skill-icon">Apollo</div>);
 export const strapiIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faServer} /> Strapi</div>);
@@ -40,8 +41,6 @@ export const projects = [
         description: (
             <div>
                 <p>IOM is software written in Java using the Spring framework consisting of several web applications, web services, and ETLs designed and managed by Autodata.</p>
-                <p>This application is used by GM employees to create and manage incentives and offers related to GM Vehicles.</p>
-                <p>IOM webservices can be used to retrieve vital information of incentives and offers related to customer type, region, and more.</p>
             </div>
         ),
         url: "https://www.autodatasolutions.com/",
@@ -53,7 +52,6 @@ export const projects = [
         description: (
             <div>
                 <p>The Shoppies is a web application designed and built by me that allows users to search for films and add them to a list of nominations.</p>
-                <p>This application was written with the React js library and uses the OMDB api to search and retrieve movies & films.</p>
             </div>),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/c_scale,q_10,w_1079/v1613152221/ShoppiesSite_hqnxyw.png",
         url: "https://shoppie-movie-awards.netlify.app/",
@@ -64,8 +62,6 @@ export const projects = [
         description: (
             <div>
                 <p>The Resourcing App is a web-application that allows managers to keep track of and manage resources on different projects.</p>
-                <p>This application is a full-stack app that was designed and developed by the GM development team at Autodata.</p>
-                <p>The app provides graphs and tables, allowing the company to easily manage projects or resources that are either under-allocated or over-allocated.</p>
             </div>),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1610131939/resource-management-image_ngok87.jpg",
         url: "https://www.autodatasolutions.com/",
@@ -108,7 +104,7 @@ export const projects = [
     },
 
 ];
-export const NUM_PROJECT_ROWS = 2;
+export const NUM_PROJECT_ROWS = 3;
 
 export const GIT_HUB_URL = "https://github.com/lgunn4/";
 export const LINKED_IN_URL = "https://www.linkedin.com/in/logan-gunn/";

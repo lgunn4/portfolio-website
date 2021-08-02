@@ -8,7 +8,7 @@ function ProjectSection() {
 
     const cards = projects.map(project => {
         return (
-          <Col className="project-section-col" md={6}>
+          <Col className="project-section-col" md={4}>
                   <Card>
                       <a className="project-card-anchor" href={project.url}>
                           <Card.Img alt="project-image" src={project.image}/>
@@ -34,6 +34,7 @@ function ProjectSection() {
             <Row>
                 {cards[i * NUM_PROJECT_ROWS]}
                 {cards[i * NUM_PROJECT_ROWS + 1] ? cards[i * NUM_PROJECT_ROWS + 1] : <Card className="empty-card"/>}
+                {cards[i * NUM_PROJECT_ROWS + 2] ? cards[i * NUM_PROJECT_ROWS + 2] : <Card className="empty-card"/>}
             </Row>);
         cardDecks.push(cardDeck);
     }
