@@ -99,7 +99,7 @@ export const projects = [
             </div>
         ),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/c_scale,q_10,w_1079/v1613152221/old-gnaryly-site_eaftnp.png",
-        url: "https://oldgnarly.com/",
+        url: "https://old-gnarly.netlify.app/",
         skills: [reactIcon, apolloIcon, strapiIcon]
     },
 
