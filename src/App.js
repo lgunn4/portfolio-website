@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'antd/dist/antd.css'
 import Layout from './Layout';
 import "./App.css"
 import {Placeholder, Preloader} from "react-preloading-screen";

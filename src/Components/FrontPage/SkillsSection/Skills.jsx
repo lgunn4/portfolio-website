@@ -1,6 +1,5 @@
 import React from 'react';
 import {Progress} from "antd";
-import 'antd/dist/antd.css'
 import {Col, Row} from "react-bootstrap";
 import "./Skills.css";
 import {

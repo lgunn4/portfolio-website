@@ -2,13 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Router} from 'react-router';
-import { createBrowserHistory } from 'history';
 
 ReactDOM.render(
-    <Router history={createBrowserHistory()}>
-        <App />
-    </Router>,
+    <App />,
     document.getElementById('root')
 );
 
