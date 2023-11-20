@@ -1,6 +1,8 @@
 .loadable-component {
-    height: 100%;
-    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+html {
     background-color: var(--loading-background);
 }
 

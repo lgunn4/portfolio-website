@@ -2,26 +2,27 @@ import React from "react";
 import "./ProjectSection.css";
 import {Card, Col, Row} from "react-bootstrap";
 import {projects, NUM_PROJECT_ROWS} from "../../../Assets/Constants";
+import { Link } from "react-router-dom";
 
 
 function ProjectSection() {
 
     const cards = projects.map(project => {
         return (
-          <Col className="project-section-col" md={4}>
-                  <Card>
-                      <a className="project-card-anchor" href={project.url}>
-                          <Card.Img alt="project-image" src={project.image}/>
-                          <Card.Body>
-                              <h4>{project.title}</h4>
-                              {project.description}
-                              <div className="project-skills">
-                                  <br/>
-                                  {project.skills}
-                              </div>
-                          </Card.Body>
-                      </a>
-                  </Card>
+          <Col className="project-section-col" md={6}>
+                 <a className="project-card-link" href={project.url}>
+                    <Card>
+                            <Card.Img alt="project-image" src={project.image}/>
+                            <Card.Body>
+                                <h4>{project.title}</h4>
+                                {project.description}
+                                <div className="project-skills">
+                                    <br/>
+                                    {project.skills}
+                                </div>
+                            </Card.Body>
+                    </Card>
+                  </a>
           </Col>
 
         )
@@ -34,7 +35,6 @@ function ProjectSection() {
             <Row>
                 {cards[i * NUM_PROJECT_ROWS]}
                 {cards[i * NUM_PROJECT_ROWS + 1] ? cards[i * NUM_PROJECT_ROWS + 1] : <Card className="empty-card"/>}
-                {cards[i * NUM_PROJECT_ROWS + 2] ? cards[i * NUM_PROJECT_ROWS + 2] : <Card className="empty-card"/>}
             </Row>);
         cardDecks.push(cardDeck);
     }

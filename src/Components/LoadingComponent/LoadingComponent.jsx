@@ -4,8 +4,10 @@ import './LoadingComponent.css';
 
 export const LoadingComponent = () => {
     return (
-        <div className="loadable-component">
-            <SyncLoader isLoading={true} color="black"/>
+        <div className="loading-wrapper">
+            <div className="loadable-component">
+                <SyncLoader isLoading={true} color="black"/>
+            </div>
         </div>
     );
 }

@@ -12,6 +12,9 @@
 .project-timeline, .ant-timeline, .project-timeline h1, .project-timeline h2, .project-timeline h3, .project-timeline h4, .project-timeline h5, .project-timeline h6, .project-timeline p{
     color: white;
 }
+.ant-timeline-item-head-custom{
+    background-color: transparent !important;
+}
 
 @media (max-width: 765px) {
     .ant-timeline-item-content {

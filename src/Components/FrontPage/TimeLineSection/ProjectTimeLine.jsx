@@ -7,14 +7,16 @@ import {
     faSchool,
     faTrophy,
     faScroll,
-    faUserGraduate
+    faUserGraduate,
+    faLanguage,
+    faGlobe
 } from "@fortawesome/free-solid-svg-icons";
 
 import {faFileCode} from '@fortawesome/free-regular-svg-icons'
 import TimelineItem from "antd/es/timeline/TimelineItem";
 import './ProjectTimeLine.css';
 import {
-    faAmazon,
+    faAmazon, faShopify,
 } from "@fortawesome/free-brands-svg-icons";
 
 function ProjectTimeLine() {
@@ -25,9 +27,22 @@ function ProjectTimeLine() {
             <br/>
             <Timeline mode="left">
                 <TimelineItem
+                    dot={<FontAwesomeIcon icon={faShopify} />}
+                    color="white"
+                    label="2022 - Present"
+                >   
+                    <h4>Full Stack Developer</h4>
+                    <h6>Shopify</h6>
+
+                    Worked on: 
+                    <div><FontAwesomeIcon icon={faLanguage} /> - Translate & Adapt app </div>
+                    <div><FontAwesomeIcon icon={faGlobe} /> - Shopify Markets</div>
+                </TimelineItem>
+
+                <TimelineItem
                     dot={<FontAwesomeIcon icon={faLaptopCode} />}
-                    color="black"
-                    label="2021 - Present"
+                    color="white"
+                    label="2021"
                 >   
                     <h4>Software Developer</h4>
                     <h6>Geotab - Telematics</h6>
@@ -39,14 +54,12 @@ function ProjectTimeLine() {
 
                 <TimelineItem
                     dot={<FontAwesomeIcon icon={faSchool} />}
-                    color="black"
+                    color="white"
                     label="2016 - 2021"
                 >
                     <h4>University Student</h4>
                     <h6>Western University</h6>
-                    <div><FontAwesomeIcon icon={faScroll}></FontAwesomeIcon> - Honours Double Major</div>
-                    <div>Computer Science / Global Commerce</div>
-                    <p></p>
+                    <div><FontAwesomeIcon icon={faScroll}></FontAwesomeIcon> - Computer Science / Global Commerce</div>
                     <div><FontAwesomeIcon icon={faUserGraduate} /> - Graduation June 2021</div>
                     <div><FontAwesomeIcon icon={faTrophy} /> - 2020 Recipient of Lynne Cram Award</div>
                     <div><FontAwesomeIcon icon={faAward} width={"1.5em"}/>  - 2017 Dean's Honour Roll</div>
@@ -55,7 +68,7 @@ function ProjectTimeLine() {
                 </TimelineItem>
                 <TimelineItem
                     dot={<FontAwesomeIcon icon={faCode} />}
-                    color="black"
+                    color="white"
                     label="2019 - 2020"
                 >
                     <h4>Software Developer Intern</h4>
@@ -64,7 +77,7 @@ function ProjectTimeLine() {
                 </TimelineItem>
                 <TimelineItem
                     dot={<FontAwesomeIcon icon={faBriefcase} />}
-                    color="black"
+                    color="white"
                     label="2017"
                 >
                     <h4>Entrepreneur and Sole Proprietor</h4>

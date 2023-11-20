@@ -3,15 +3,14 @@ import {Progress} from "antd";
 import {Col, Row} from "react-bootstrap";
 import "./Skills.css";
 import {
-    cIcon, cppIcon, cSharpIcon,
-    cssIcon,
-    dockerIcon,
-    gitIcon,
-    htmlIcon,
-    javaIcon, jsIcon,
-    linuxIcon,
-    mysqlIcon,
-    pythonIcon, reactIcon, springIcon
+    cSharpIcon,
+    cssIconText,
+    dockerIconText,
+    gitIconText,
+    htmlIconText,
+    javaIconText, jsIconText,
+    linuxIconText,
+    pythonIconText, railsIconText, reactIconText, rubyIconText,
 } from "../../../Assets/Constants";
 
 function Skills() {
@@ -26,24 +25,22 @@ function Skills() {
                           <Col md={{span:8, offset: 2}} >
                               <h5>Languages</h5>
 
-                              <Progress className="primary" percent={80} format={() => javaIcon} />
-                              <Progress className="secondary" percent={70} format={() => pythonIcon} />
-                              <Progress className="primary" percent={75} format={() => cSharpIcon} />
-                              <Progress className="secondary" percent={60} format={() => mysqlIcon} />
-                              <Progress className="primary" percent={85} format={() => htmlIcon} />
-                              <Progress className="secondary" percent={75} format={() => cssIcon} />
-                              <Progress className="primary" percent={60} format={() => jsIcon} />
-                              <Progress className="secondary" percent={40} format={() =>  cIcon} />
-                              <Progress className="primary" percent={30} format={() => cppIcon} />
+                            <Progress className="secondary" percent={85} format={() => rubyIconText} />
+                              <Progress className="primary" percent={65} format={() => javaIconText} />
+                              <Progress className="secondary" percent={70} format={() => pythonIconText} />
+                              <Progress className="primary" percent={65} format={() => cSharpIcon} />
+                              <Progress className="secondary" percent={85} format={() => htmlIconText} />
+                              <Progress className="primary" percent={75} format={() => cssIconText} />
+                              <Progress className="secondary" percent={80} format={() => jsIconText} />
 
                               <p/>
                               <br/>
                               <h5>Technologies</h5>
-                              <Progress className="primary" percent={85} format={() => gitIcon}/>
-                              <Progress className="secondary" percent={70} format={() => linuxIcon}/>
-                              <Progress className="primary" percent={50} format={() => dockerIcon} />
-                              <Progress className="secondary" percent={65} format={() => reactIcon}/>
-                              <Progress className="primary" percent={60} format={() => springIcon} />
+                              <Progress className="secondary" percent={90} format={() => railsIconText} />
+                              <Progress className="primary" percent={90} format={() => gitIconText}/>
+                              <Progress className="secondary" percent={70} format={() => linuxIconText}/>
+                              <Progress className="primary" percent={50} format={() => dockerIconText} />
+                              <Progress className="secondary" percent={65} format={() => reactIconText}/>
                           </Col>
                       </Row>
                       <br/>

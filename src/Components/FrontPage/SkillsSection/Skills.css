@@ -1,9 +1,9 @@
 .primary .ant-progress-bg {
-    background-color: var(--custom-orange);
+    background-color: var(--custom-blue);
 }
 
 .secondary .ant-progress-bg {
-    background-color: var(--custom-blue);
+    background-color: var(--custom-secondary);
 }
 
 .skill-section, .skill-section h1, .skill-section h3, .skill-section h3, .skill-section h4, .skill-section h5, .skill-section h6, .skill-section p{

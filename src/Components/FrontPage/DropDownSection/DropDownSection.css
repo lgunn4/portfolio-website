@@ -6,13 +6,13 @@
 }
 
 .collapse-button button, .collapse-button button:focus {
-    background-color: var(--custom-secondary);
-    border: var(--custom-secondary);
+    background-color: var(--custom-primary);
+    border: var(--custom-primary);
 }
 
 .collapse-button button:hover {
-     background-color: var(--custom-light-green);
-     border: var(--custom-light-green);
+     background-color: var(--custom-secondary) !important;
+     border: var(--custom-secondary) !important;
 }
 
 
