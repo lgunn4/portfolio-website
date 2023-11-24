@@ -44,7 +44,7 @@
 
 .project-section .card-img {
     border-radius: 0;
-    height: 45vh;
+    height: 350px;
     object-fit: cover;
     object-position: top;
 }
