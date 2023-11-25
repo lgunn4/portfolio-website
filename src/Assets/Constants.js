@@ -8,7 +8,8 @@ import {
     faLinux,
     faPython,
     faReact,
-    faShopify
+    faShopify,
+    faWindows
 } from "@fortawesome/free-brands-svg-icons";
 import {faDatabase, faDharmachakra, faGem, faTrain} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
@@ -69,6 +70,9 @@ export const railsIconText = (<div className="skill-icon"><FontAwesomeIcon icon=
 
 export const shopifyIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faShopify} /></div>);
 
+export const microsoftIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faWindows} /></div>);
+
+
 export const projects = [
     {
         title: "Translate and Adapt",
@@ -104,18 +108,6 @@ export const projects = [
         skills: [javaIcon, pythonIcon, mysqlIcon, dockerIcon]
     },
     {
-        title: "Portfolio Website",
-        description: (
-            <div>
-                <p>logangunn.com is a portfolio website designed and built by me to showcase my personal programming skills and abilities.</p>
-                <p>This website also features projects I have worked on in order to highlight my abilities as a software developer.</p>
-            </div>
-        ),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1700507209/Screen_Shot_2023-11-20_at_2.10.26_PM_sogptt.png",
-        url: "/",
-        skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
-    },
-    {
         title: "The Shoppies",
         description: (
             <div>
@@ -124,6 +116,17 @@ export const projects = [
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/c_scale,q_10,w_1079/v1613152221/ShoppiesSite_hqnxyw.png",
         url: "https://shoppie-movie-awards.netlify.app/",
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
+    },
+    {
+        title: "Image Repository",
+        description: (
+            <div>
+                <p>Image repository is a project I designed and built in C# using the .NET framework.</p>
+                <p>It is an API that allows clients to upload, view, and manage images.</p>
+            </div>),
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1700924656/jon-tyson-P2aOvMMUJnY-unsplash_zatxn2.jpg",
+        url: "https://github.com/lgunn4/shopify-image-repository",
+        skills: [cSharpIcon, microsoftIcon]
     },
     {
         title: "Resourcing App",
@@ -136,14 +139,27 @@ export const projects = [
         skills: [javaIcon, mysqlIcon, kubeIcon, reactIcon]
     },
     {
-        title: "BlackJack game",
+        title: "Blog Site",
         description: (
             <div>
-                <p>The Black Jack game is a C++ application that follows the standard Black Jack Casino rules.</p>
-            </div>),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_20/v1610135530/blackjack-project-image_jewbso.jpg",
-        url: "https://github.com/lgunn4/Black-Jack-Project-cs3307",
-        skills: [cppIcon, cmakeIcon]
+                <p>blog.logangunn.com is a blog website designed and built by me in Ruby on Rails to allow me to blog about what is happening in my life. </p>
+            </div>
+        ),
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1700924416/Screen_Shot_2023-11-25_at_10.03.15_AM_bcxazg.png",
+        url: "https://blog.logangunn.com",
+        skills: [rubyIcon, htmlIcon, jsIcon, cssIcon]
+    },
+    {
+        title: "Portfolio Website",
+        description: (
+            <div>
+                <p>logangunn.com is a portfolio website designed and built by me to showcase my personal programming skills and abilities.</p>
+                <p>This website also features projects I have worked on in order to highlight my abilities as a software developer.</p>
+            </div>
+        ),
+        image: "https://res.cloudinary.com/ddtorekqd/image/upload/v1700507209/Screen_Shot_2023-11-20_at_2.10.26_PM_sogptt.png",
+        url: "/",
+        skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
     {
         title: "Portfolio Site - Original",
