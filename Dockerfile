@@ -18,5 +18,8 @@ RUN chmod -R 777 public/ src/
 # Build the app
 RUN npm run build
 
+# Expose the port to the outside
+EXPOSE 3000
+
 # Set the command to start the app
 CMD ["npm", "start"]
