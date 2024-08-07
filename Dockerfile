@@ -1,25 +1,32 @@
-# Specify the base image to use
-FROM node:14-alpine
+FROM node:14-alpine AS builder
+ENV NODE_ENV production
 
-# Set the working directory
+# Add a work directory
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files to the container
-COPY package*.json ./
+# Cache and Install dependencies
+COPY package.json .
+COPY yarn.lock .
+RUN npm i
 
-# Install dependencies
-RUN npm install
-
-# Copy the app code to the container
+# Copy app files
 COPY . .
-RUN chmod 777 ./
-RUN chmod -R 777 public/ src/
 
 # Build the app
 RUN npm run build
 
-# Expose the port to the outside
-EXPOSE 3000
+# Bundle static assets with nginx
+FROM nginx:1.21.0-alpine as production
+ENV NODE_ENV production
 
-# Set the command to start the app
-CMD ["npm", "start"]
+# Copy built assets from builder
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Add your nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Expose port
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
