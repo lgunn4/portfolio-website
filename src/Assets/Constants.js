@@ -114,7 +114,7 @@ export const projects = [
                 <p>The Shoppies is a web application designed and built by me that allows users to search for films and add them to a list of nominations.</p>
             </div>),
         image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_auto/f_auto/c_scale,q_10,w_1079/v1613152221/ShoppiesSite_hqnxyw.png?w=auto&h=auto",
-        url: "https://shoppie-movie-awards.netlify.app/",
+        url: "https://shoppies.loft-cloud.com",
         skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
     },
     {
