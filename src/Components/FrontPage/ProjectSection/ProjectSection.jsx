@@ -2,7 +2,6 @@ import React from "react";
 import "./ProjectSection.css";
 import {Card, Col, Row} from "react-bootstrap";
 import {projects, NUM_PROJECT_ROWS} from "../../../Assets/Constants";
-import { Link } from "react-router-dom";
 
 
 function ProjectSection() {
