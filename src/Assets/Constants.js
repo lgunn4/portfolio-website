@@ -14,7 +14,7 @@ import {
 import {faDatabase, faDharmachakra, faGem, faTrain} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-export const HEADER_IMAGE_URL = "https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/h_1500/v1700508066/cover_divxjz.jpg";
+export const HEADER_IMAGE_URL = "https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:good/f_auto/h_2000/v1700508066/cover_divxjz.jpg";
 
 export const javaIcon = (<div className="skill-icon"><FontAwesomeIcon icon={faJava}/></div>);
 export const javaIconText = (<div className="skill-icon"><FontAwesomeIcon icon={faJava}/> Java</div>);
