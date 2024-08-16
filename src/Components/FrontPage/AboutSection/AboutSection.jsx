@@ -33,7 +33,7 @@ function AboutSection(){
                     </h5>
                 </Col>
                 <Col className="about-image" md={{span: 2, offset: 1}}>
-                    <Image roundedCircle width={250} height={250} src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto/f_auto/v1700508074/thumbnail_ryrqu4.jpg" />
+                    <Image roundedCircle width={250} height={250} src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700508074/thumbnail_ryrqu4.jpg" />
                 </Col>
 
             </Row>
