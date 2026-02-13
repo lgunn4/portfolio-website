@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Gunn - Full Stack Developer</title>
+    <link rel="icon" type="image/png" href="./logo192.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --custom-orange: #f89820;
+            --custom-blue: #5382a1;
+            --custom-light-green: rgba(116, 139, 111, 0.75);
+            --custom-gray: rgba(255,255,255,0.65);
+            --custom-dark-gray: #343a40;
+            --loading-background: #c1cfdc;
+            --custom-background: #5D6765;
+            --custom-primary: #282F44;
+            --custom-secondary: #CCB7AE;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: var(--custom-background);
+            color: white;
+        }
+        
+        /* Header Section */
+        .header {
+            background-image: url('https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:good/f_auto/h_2000/v1700508066/cover_divxjz.jpg');
+            background-position: 25% 80%;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 10%;
+        }
+        
+        .header-text-box {
+            background-color: rgba(0, 0, 0, 0.50);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 500px;
+            margin-right: 5%;
+        }
+        
+        .header-text-box h3 {
+            margin-bottom: 15px;
+        }
+        
+        .header-text-box h4 {
+            font-weight: normal;
+        }
+        
+        .blog-button {
+            margin-top: 20px;
+        }
+        
+        .blog-button a {
+            display: inline-block;
+            background-color: var(--custom-primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .blog-button a:hover {
+            background-color: var(--custom-secondary);
+        }
+        
+        .blog-button i {
+            margin-right: 8px;
+        }
+        
+        /* About Section */
+        .about-section {
+            text-align: center;
+            padding: 80px 10%;
+        }
+        
+        .about-content {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about-text {
+            flex: 2;
+            text-align: left;
+        }
+        
+        .about-text h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .about-text h5 {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-weight: normal;
+        }
+        
+        .about-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .about-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .about-section > p {
+            margin-top: 40px;
+            font-size: 1.1rem;
+        }
+        
+        /* Collapse Button */
+        .collapse-section {
+            text-align: center;
+            padding: 20px 0 40px;
+        }
+        
+        .collapse-button {
+            background-color: var(--custom-primary);
+            border: none;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .collapse-button:hover {
+            background-color: var(--custom-secondary);
+        }
+        
+        /* Collapsible Content */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        
+        .collapsible-content.open {
+            max-height: 3000px;
+            transition: max-height 0.5s ease-in;
+        }
+        
+        .timeline-skills-container {
+            display: flex;
+            gap: 40px;
+            padding: 40px 10%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Timeline Section */
+        .timeline-section {
+            flex: 1;
+        }
+        
+        .timeline-section h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -47px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--custom-background);
+        }
+        
+        .timeline-item .icon {
+            position: absolute;
+            left: -51px;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        
+        .timeline-label {
+            color: var(--custom-gray);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        
+        .timeline-item h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .timeline-item h6 {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            color: var(--custom-secondary);
+        }
+        
+        .timeline-item p, .timeline-item div {
+            margin: 8px 0;
+            font-size: 0.95rem;
+        }
+        
+        .timeline-item i {
+            margin-right: 8px;
+            width: 1.5em;
+        }
+        
+        .timeline-item a {
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .timeline-item button {
+            background-color: var(--custom-primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .timeline-item button:hover {
+            background-color: var(--custom-secondary);
+        }
+        
+        /* Skills Section */
+        .skills-section {
+            flex: 1;
+        }
+        
+        .skills-section h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+        }
+        
+        .skills-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .skills-section h5 {
+            margin: 30px 0 20px;
+            font-size: 1.2rem;
+        }
+        
+        .skill-bar {
+            margin-bottom: 20px;
+        }
+        
+        .skill-bar-bg {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 100px;
+            height: 28px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            color: white;
+            font-weight: bold;
+            transition: width 1s ease-out;
+        }
+        
+        .skill-bar-fill.primary {
+            background-color: var(--custom-blue);
+        }
+        
+        .skill-bar-fill.secondary {
+            background-color: var(--custom-secondary);
+        }
+        
+        .skill-bar-fill i {
+            margin-right: 8px;
+        }
+        
+        /* Projects Section */
+        .projects-section {
+            background-color: var(--custom-primary);
+            padding: 80px 10%;
+        }
+        
+        .projects-section h1 {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .project-card {
+            background-color: var(--custom-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        
+        .project-card:hover {
+            box-shadow: 0 10px 30px var(--custom-background);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: top;
+        }
+        
+        .project-card-body {
+            padding: 30px;
+        }
+        
+        .project-card h4 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: black;
+        }
+        
+        .project-card p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: black;
+        }
+        
+        .project-skills {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: black;
+        }
+        
+        /* Footer Section */
+        .footer-section {
+            background-color: var(--custom-primary);
+            padding: 60px 10% 30px;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section a {
+            color: white;
+            font-size: 2rem;
+            margin-right: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--custom-gray);
+        }
+        
+        .designed-by {
+            text-align: right;
+            margin-top: 40px;
+            color: var(--custom-gray);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .timeline-skills-container {
+                flex-direction: column;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                height: 80vh;
+                padding: 20px;
+                justify-content: center;
+            }
+            
+            .header-text-box {
+                margin: 0;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-text {
+                text-align: center;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+            
+            .timeline-skills-container {
+                padding: 20px 5%;
+            }
+            
+            .timeline {
+                font-size: 0.85rem;
+            }
+            
+            .projects-section,
+            .footer-section {
+                padding: 40px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-text-box">
+            <h3>My Name is <strong>Logan Gunn</strong></h3>
+            <h4>I am a full stack developer from London Ontario, Canada</h4>
+            <div class="blog-button">
+                <a href="https://blog.logangunn.com">
+                    <i class="fas fa-comment"></i> Visit My Blog
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5 id="age-text">I am a full stack developer with an honours double major in Computer Science and Global Commerce from Western University.</h5>
+                <h5>Since a very early age I have been interested in technology and have always wanted to know how software, apps, and the internet worked.</h5>
+                <h5>I am a self-starter and an entrepreneur. I successfully created and ran my own business when I was 18.</h5>
+                <h5>I love to learn and chase new opportunities as well as explore my own talents. I do this through programming, making music, and meditation.</h5>
+            </div>
+            <div class="about-image">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700508074/thumbnail_ryrqu4.jpg" alt="Logan Gunn">
+            </div>
+        </div>
+        <p><strong>Learn More About My Experience and Skills</strong></p>
+    </div>
+
+    <!-- Collapse Button -->
+    <div class="collapse-section">
+        <button class="collapse-button" id="collapseBtn" onclick="toggleCollapse()">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+
+    <!-- Collapsible Content -->
+    <div class="collapsible-content" id="collapsibleContent">
+        <div class="timeline-skills-container">
+            <!-- Timeline Section -->
+            <div class="timeline-section">
+                <h3>Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fab fa-shopify"></i></div>
+                        <div class="timeline-label">2022 - Present</div>
+                        <h4>Full Stack Developer</h4>
+                        <h6>Shopify</h6>
+                        <p>Worked on:</p>
+                        <div><i class="fas fa-language"></i> Translate & Adapt app</div>
+                        <div><i class="fas fa-globe"></i> Shopify Markets</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-label">2021</div>
+                        <h4>Software Developer</h4>
+                        <h6>Geotab - Telematics</h6>
+                        <p>Responsible For:</p>
+                        <div><i class="fas fa-layer-group"></i> Designing Robust Solutions</div>
+                        <div><i class="far fa-file-code"></i> Developing Clean Code</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-school"></i></div>
+                        <div class="timeline-label">2016 - 2021</div>
+                        <h4>University Student</h4>
+                        <h6>Western University</h6>
+                        <div><i class="fas fa-scroll"></i> Computer Science / Global Commerce</div>
+                        <div><i class="fas fa-user-graduate"></i> Graduation June 2021</div>
+                        <div><i class="fas fa-trophy"></i> 2020 Recipient of Lynne Cram Award</div>
+                        <div><i class="fas fa-award"></i> 2017 Dean's Honour Roll</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <div class="timeline-label">2019 - 2020</div>
+                        <h4>Software Developer Intern</h4>
+                        <h6>Autodata Solutions</h6>
+                        <p>Worked on Software for some of the world's largest automotive companies</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-label">2017</div>
+                        <h4>Entrepreneur and Sole Proprietor</h4>
+                        <h6>Real World Textbooks</h6>
+                        <p>Buying and selling inventory, marketing/promoting business, overseeing financials, and analyzing customer behavior</p>
+                        <div><i class="fab fa-amazon"></i> Amazon FBA business</div>
+                        <a href="https://realworldtextbooks.wixsite.com/realworldtextbooks">
+                            <button>Go To Website</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <div class="skills-content">
+                    <h5>Languages</h5>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill secondary" style="width: 85%;">
+                                <i class="fas fa-gem"></i> Ruby
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill primary" style="width: 65%;">
+                                <i class="fab fa-java"></i> Java
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill secondary" style="width: 70%;">
+                                <i class="fab fa-python"></i> Python
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill primary" style="width: 65%;">
+                                C#
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill secondary" style="width: 85%;">
+                                <i class="fab fa-html5"></i> HTML
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill primary" style="width: 75%;">
+                                <i class="fab fa-css3-alt"></i> CSS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill secondary" style="width: 80%;">
+                                <i class="fab fa-js-square"></i> JavaScript
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5>Technologies</h5>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill secondary" style="width: 90%;">
+                                <i class="fas fa-train"></i> Rails
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill primary" style="width: 90%;">
+                                <i class="fab fa-git-alt"></i> Git
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill secondary" style="width: 70%;">
+                                <i class="fab fa-linux"></i> Linux
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill primary" style="width: 50%;">
+                                <i class="fab fa-docker"></i> Docker
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill secondary" style="width: 65%;">
+                                <i class="fab fa-react"></i> React
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects-section">
+        <h1>My Projects</h1>
+        <div class="projects-grid">
+            <a href="https://apps.shopify.com/translate-and-adapt" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700504918/maxresdefault_s6vjmz.jpg" alt="Translate and Adapt">
+                <div class="project-card-body">
+                    <h4>Translate and Adapt</h4>
+                    <p>Translate and Adapt is a first party Shopify App that allows merchants to translate their store content manually as well as automatically through Google Translation API.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-shopify"></i>
+                        <i class="fas fa-gem"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.geotab.com/fleet-management-solutions/evsa/" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700505559/Screen_Shot_2023-11-20_at_1.42.59_PM_hudahv.png" alt="EVSA">
+                <div class="project-card-body">
+                    <h4>EVSA</h4>
+                    <p>Electric vehicle suitability assessment tool (EVSA) built and managed by Geotab gives you recommendations based on real world driven data how your fleet could benefit from converting to electric vehicles.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-python"></i>
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.autodatasolutions.com/" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/q_20/v1610131761/iom-project-image_gkaj1c.jpg" alt="IOM">
+                <div class="project-card-body">
+                    <h4>IOM</h4>
+                    <p>IOM is software written in Java using the Spring framework consisting of several web applications, web services, and ETLs designed and managed by Autodata.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-java"></i>
+                        <i class="fab fa-python"></i>
+                        <i class="fas fa-database"></i>
+                        <i class="fab fa-docker"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://shoppies.loft-cloud.com" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/c_scale,q_10,w_1079/v1613152221/ShoppiesSite_hqnxyw.png" alt="The Shoppies">
+                <div class="project-card-body">
+                    <h4>The Shoppies</h4>
+                    <p>The Shoppies is a web application designed and built by me that allows users to search for films and add them to a list of nominations.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/lgunn4/shopify-image-repository" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700924656/jon-tyson-P2aOvMMUJnY-unsplash_zatxn2.jpg" alt="Image Repository">
+                <div class="project-card-body">
+                    <h4>Image Repository</h4>
+                    <p>Image repository is a project I designed and built in C# using the .NET framework.</p>
+                    <p>It is an API that allows clients to upload, view, and manage images.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.autodatasolutions.com/" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/q_20/v1610131939/resource-management-image_ngok87.jpg" alt="Resourcing App">
+                <div class="project-card-body">
+                    <h4>Resourcing App</h4>
+                    <p>The Resourcing App is a web-application that allows managers to keep track of and manage resources on different projects.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-java"></i>
+                        <i class="fas fa-database"></i>
+                        <i class="fas fa-dharmachakra"></i>
+                        <i class="fab fa-react"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://blog.logangunn.com" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700924416/Screen_Shot_2023-11-25_at_10.03.15_AM_bcxazg.png" alt="Blog Site">
+                <div class="project-card-body">
+                    <h4>Blog Site</h4>
+                    <p>blog.logangunn.com is a blog website designed and built by me in Ruby on Rails to allow me to blog about what is happening in my life.</p>
+                    <div class="project-skills">
+                        <i class="fas fa-gem"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700507209/Screen_Shot_2023-11-20_at_2.10.26_PM_sogptt.png" alt="Portfolio Website">
+                <div class="project-card-body">
+                    <h4>Portfolio Website</h4>
+                    <p>logangunn.com is a portfolio website designed and built by me to showcase my personal programming skills and abilities.</p>
+                    <p>This website also features projects I have worked on in order to highlight my abilities as a software developer.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://old.logangunn.com" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700504046/g9wtrjlvnqug1vywu21z.png" alt="Portfolio Site - Original">
+                <div class="project-card-body">
+                    <h4>Portfolio Site - Original</h4>
+                    <p>This is my first ever front end project written in HTML JS and CSS.</p>
+                    <p>It was a portfolio website to showcase my interests and talents.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://dahee.logangunn.com/" class="project-card">
+                <img src="https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700506959/Screen_Shot_2023-11-20_at_2.05.25_PM_dfuq0x.png" alt="The Dahee">
+                <div class="project-card-body">
+                    <h4>The Dahee</h4>
+                    <p>This is my first ever front end project written in HTML JS and CSS.</p>
+                    <p>It was a portfolio website to showcase my interests and talents.</p>
+                    <div class="project-skills">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer-section">
+        <div class="footer-content">
+            <h4>Links</h4>
+            <a href="https://github.com/lgunn4/"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/logan-gunn/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="designed-by">
+            <p>Designed by Logan Gunn</p>
+        </div>
+    </div>
+
+    <script>
+        // Calculate age dynamically
+        function calculateAge() {
+            const birthDate = new Date('1998-11-23');
+            const ageDiff = Date.now() - birthDate.getTime();
+            const ageDate = new Date(ageDiff);
+            const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+            
+            const ageText = document.getElementById('age-text');
+            ageText.textContent = `I am a ${age} year old full stack developer with an honours double major in Computer Science and Global Commerce from Western University.`;
+        }
+
+        // Toggle collapse functionality
+        function toggleCollapse() {
+            const content = document.getElementById('collapsibleContent');
+            const btn = document.getElementById('collapseBtn');
+            const icon = btn.querySelector('i');
+            
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.className = 'fas fa-chevron-down';
+            } else {
+                content.classList.add('open');
+                icon.className = 'fas fa-chevron-up';
+            }
+        }
+
+        // Initialize age on page load
+        calculateAge();
+    </script>
+</body>
+</html>
