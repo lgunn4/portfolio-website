@@ -139,29 +139,6 @@ export const projects = [
         skills: [javaIcon, mysqlIcon, kubeIcon, reactIcon]
     },
     {
-        title: "Blog Site",
-        description: (
-            <div>
-                <p>blog.logangunn.com is a blog website designed and built by me in Ruby on Rails to allow me to blog about what is happening in my life. </p>
-            </div>
-        ),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700924416/Screen_Shot_2023-11-25_at_10.03.15_AM_bcxazg.png",
-        url: "https://blog.logangunn.com",
-        skills: [rubyIcon, htmlIcon, jsIcon, cssIcon]
-    },
-    {
-        title: "Portfolio Website",
-        description: (
-            <div>
-                <p>logangunn.com is a portfolio website designed and built by me to showcase my personal programming skills and abilities.</p>
-                <p>This website also features projects I have worked on in order to highlight my abilities as a software developer.</p>
-            </div>
-        ),
-        image: "https://res.cloudinary.com/ddtorekqd/image/upload/q_auto:eco/f_auto/w_500/v1700507209/Screen_Shot_2023-11-20_at_2.10.26_PM_sogptt.png",
-        url: "/",
-        skills: [reactIcon,htmlIcon, cssIcon, jsIcon]
-    },
-    {
         title: "Portfolio Site - Original",
         description: (
             <div>

@@ -395,7 +395,6 @@ Based on recent commits (35ee257, f395eaa):
 ## Useful References
 
 - **Live Site**: https://logangunn.com
-- **Blog**: https://blog.logangunn.com
 - **Old Portfolio**: https://old.logangunn.com
 - **GitHub**: https://github.com/lgunn4/
 - **LinkedIn**: https://www.linkedin.com/in/logan-gunn/
